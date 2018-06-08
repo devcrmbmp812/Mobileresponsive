@@ -30,7 +30,7 @@ include 'layout/navbar.php'; ?>
 <div class="navbar-bottom_finalresult padtop0 padbot0 morered_bg">
   <div class="d-flex flex-wrap">
     <div class="w15 mr1p padtb8">
-	<a href="javascript:void(0);" class="f_tab_btn">
+	<a href="javascript:void(0);" class="f_tab_btn ">
 
 	전체
 	</a>
@@ -41,7 +41,7 @@ include 'layout/navbar.php'; ?>
 	
       <div class="sport-carousel_1 owl-carousel">
         <div class="item">
-        <a href="javascript:void(0);" class="f_tab_btn">
+        <a href="javascript:void(0);" class="f_tab_btn active_f_tab_btn">
 	<span class="mr22 "><img src="assets/img/sports/soccer-ball-icon.svg" alt="soccer"></span>
 	축구
 	</a>
