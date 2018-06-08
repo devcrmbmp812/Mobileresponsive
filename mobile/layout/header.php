@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-
+<style>.sport-carousel_1 img.w22 {width:22px!important;}</style>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=414, maximum-scale=1">

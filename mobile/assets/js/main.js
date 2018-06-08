@@ -38,7 +38,12 @@ $(document).ready(function() {
     items: 3
   });
 
-
+  $('.sport-carousel_1').owlCarousel({
+    loop: false,
+    margin: 0,
+    dots: false,
+    items: 3
+  });
   // // will remove this
   // $('.option-select').selectpicker({
   //   style: 'btn-option'

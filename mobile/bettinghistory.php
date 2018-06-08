@@ -26,7 +26,7 @@ include 'layout/navbar.php'; ?>
     </div>
     <div class="nav-balance ml0">
      <span class="anchorwrap posrel" >
-      <a class="btn1 btn-mgrey noborder" href="checking.php">
+      <a class="btn1 btn-mgrey noborder" href="#">
        진행중인 배팅 확인하기 
       </a>
 	   <span class="dropdownimg"><img src="assets/img/ddoenarrow.png"></span>
@@ -190,17 +190,6 @@ include 'layout/navbar.php'; ?>
     </div>
   </a>
 </li>
-<!-- <li>
-<div class="upperlidiv">
-<span class="mright15 min100">2017-08-22 </span>
-<span class="mright15 min100">23:23:11</span>
-</div>
-<div class="ulowerlidiv">
-<span class="mright15 min100 lowerbigtext">DOUBLE (2) </span>
-<span class="mright15 min100 lowerbigtext">ODD: 15.55</span>
-<span class="mright15  lowerbigtext">RESULT:  <span class="tc2">WAITING</span></span>
-</div>
-</li> -->
 </ul>
 
 
@@ -208,9 +197,7 @@ include 'layout/navbar.php'; ?>
 </div>
 
 </div>
-<script type="text/javascript">
-  
-</script>
+
 <?php include 'layout/main-menu.php'; ?>
 
 <?php include 'layout/balance-menu.php'; ?>
