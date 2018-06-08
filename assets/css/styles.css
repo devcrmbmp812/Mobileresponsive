@@ -1,0 +1,852 @@
+@font-face { font-family: 'aasianhead'; src: url("../fonts/aasianhead1.eot"); src: url("../fonts/aasianhead1.eot?#iefix") format("embedded-opentype"), url("../fonts/aasianhead1.woff") format("woff"), url("../fonts/aasianhead1.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'aasianhead'; src: url("../fonts/aasianhead2.eot"); src: url("../fonts/aasianhead2.eot?#iefix") format("embedded-opentype"), url("../fonts/aasianhead2.woff") format("woff"), url("../fonts/aasianhead2.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Kartika'; src: url("../fonts/Kartika-Bold.eot"); src: url("../fonts/Kartika-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Kartika-Bold.woff2") format("woff2"), url("../fonts/Kartika-Bold.woff") format("woff"), url("../fonts/Kartika-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'digital7'; src: url("../fonts/digital-7-webfont.eot"); src: url("../fonts/digital-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/digital-7-webfont.woff2") format("woff2"), url("../fonts/digital-7-webfont.woff") format("woff"), url("../fonts/digital-7-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.container { max-width: none !important; width: 1360px; min-width: 1360px; }
+
+.container, .container-fluid { padding-right: 5px; padding-left: 5px; }
+
+.row { margin-right: -5px; margin-left: -5px; }
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto { padding-right: 5px; padding-left: 5px; }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus, a:focus { outline-color: rgba(255, 0, 0, 0.3); }
+
+.btn { border: 1px solid rgba(221, 221, 221, 0.5); border-radius: 0; height: 32px; line-height: 24px; padding: 3px 10px; font-size: 16px; color: #fff; background-color: #242424; text-align: center; position: relative; outline: none; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+.btn:focus, .btn:hover { text-decoration: none; color: #fff; opacity: 0.8; }
+.btn:focus { -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.3); box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.3); }
+.btn.btn-white { border: 1px solid rgba(221, 221, 221, 0.8); background: #393a46; background: -webkit-gradient(linear, left top, right top, from(#393a46), to(rgba(0, 0, 0, 0.5))); background: linear-gradient(to right, #393a46, rgba(0, 0, 0, 0.5)); }
+.btn.btn-inner { background: #864544; background: -webkit-gradient(linear, left top, right top, from(#864544), to(rgba(134, 69, 68, 0))); background: linear-gradient(to right, #864544, rgba(134, 69, 68, 0)); }
+.btn.btn-blue { border: 1px solid #157d9f; background: rgba(29, 123, 177, 0.34); }
+.btn.btn-gray-light { background: #878787; color: #191919; }
+.btn.btn-gray-dark { background: #424242; color: #b0b0b0; border-color: #888888; }
+.btn.btn-outline { background: none; }
+.btn .btn-icon { display: inline-block; height: 24px; width: 24px; vertical-align: top; float: left; text-align: center; }
+.btn .btn-icon img { vertical-align: top; }
+.btn .svg-icon { max-width: 100%; display: inline-block; }
+.btn.btn-link { border: 0; background: none; }
+
+.btn-inner-green, .btn-inner-white.active { background: none; position: relative; padding: 3px; border-color: #a1c85b; }
+.btn-inner-green > span, .btn-inner-white.active > span { padding: 0 10px; display: block; background: #5b6121; background: -webkit-gradient(linear, left top, right top, from(#5b6121), to(rgba(91, 97, 33, 0))); background: linear-gradient(to right, #5b6121, rgba(91, 97, 33, 0)); }
+
+.btn-inner-red { background: none; position: relative; padding: 3px; border-color: #c80000; }
+.btn-inner-red > span { padding: 0 10px; display: block; background: rgba(199, 5, 0, 0.2); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.2)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.2), rgba(0, 0, 0, 0)); }
+
+.btn-inner-white { background: none; position: relative; padding: 3px; border-color: #c7c7c7; }
+.btn-inner-white > span { padding: 0 10px; display: block; background: rgba(255, 255, 255, 0.15); background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0)); }
+
+.btn-inner-brown { background: none; position: relative; padding: 3px; border-color: #f2ae31; }
+.btn-inner-brown > span { display: block; background: rgba(242, 174, 49, 0.44); background: -webkit-gradient(linear, left top, right top, from(rgba(242, 174, 49, 0.44)), to(rgba(242, 174, 49, 0))); background: linear-gradient(to right, rgba(242, 174, 49, 0.44), rgba(242, 174, 49, 0)); }
+
+/* ================ GENERAL STYLES
+======================================================= */
+body { font-family: 'aasianhead', sans-serif; font-weight: normal; background-color: black; min-width: 1330px; color: #FFFFFF; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+a { text-decoration: none; color: #fff; }
+a:hover { color: #fff; text-decoration: none; }
+
+p { margin-bottom: 0; }
+
+.main-content { background: #000000 url("../img/desktop-bg.jpg") no-repeat bottom; padding-top: 50px; }
+
+.dark-box { border: 1px solid #333; background: rgba(0, 0, 0, 0.6); }
+.dark-box .box-title { color: #fff; font-size: 16px; line-height: 36px; border-bottom: 2px solid #e41515; margin-top: 0; margin-bottom: 2px; padding: 0 10px 8px; font-weight: bold; }
+.dark-box .box-title .img-icon { width: 36px; height: 36px; line-height: 36px; text-align: center; display: inline-block; float: left; margin-right: 20px; }
+
+.pagination { max-width: 40%; height: 32px; background: #222222; color: #ababab; text-align: center; overflow: hidden; margin: 20px auto; border-radius: 0; }
+.pagination .page-controller { width: 40px; color: #fff; font-size: 24px; line-height: 32px; vertical-align: middle; padding-top: 2px; }
+.pagination .page-controller.mr-auto { border-right: 1px solid rgba(221, 221, 221, 0.6); }
+.pagination .page-controller.ml-auto { border-left: 1px solid rgba(221, 221, 221, 0.6); }
+.pagination .list-inline-item a { color: #ababab; font-size: 18px; line-height: 32px; padding-top: 2px; display: block; }
+.pagination .list-inline-item a.active { color: #fff; }
+.pagination .list-inline-item a:hover { color: #fff; text-decoration: underline; }
+
+.form-control::-moz-placeholder { color: #888888; }
+
+.form-control:-ms-input-placeholder { color: #888888; }
+
+.form-control::-webkit-input-placeholder { color: #888888; }
+
+.custom-checkbox .custom-control-label::before { border-radius: 0; top: 4px; background-color: #3e3536; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before { background-color: #3e3536; border: 0; color: #c7d83a; }
+
+.sport-tabs-cover { background: #000000; margin-bottom: 10px; }
+.sport-tabs-cover .tab-content { padding: 10px; }
+.sport-tabs-cover .sport-tabs-nav { background: #950f04; background: -webkit-gradient(linear, left top, left bottom, from(#950f04), to(#380502)); background: linear-gradient(to bottom, #950f04, #380502); }
+.sport-tabs-cover .sport-tabs-nav .nav-item.active { background: #380502; background: -webkit-gradient(linear, left top, left bottom, from(#380502), to(#950f04)); background: linear-gradient(to bottom, #380502, #950f04); }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item { margin-bottom: 5px; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item:not(:last-child) { margin-right: 0; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item a { display: -webkit-box; display: -ms-flexbox; display: flex; line-height: 32px; padding: 5px 10px; background: rgba(81, 12, 14, 0); background: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 12, 14, 0)), to(#510C0E)); background: linear-gradient(to bottom, rgba(81, 12, 14, 0), #510C0E); position: relative; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item a.active { background: rgba(128, 8, 9, 0); background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 8, 9, 0)), to(#800809)); background: linear-gradient(to bottom, rgba(128, 8, 9, 0), #800809); }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item a.active:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #d5b0b0; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item .sport-icon { width: 32px; height: 32px; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item .sport-icon img { vertical-align: top; }
+.sport-tabs-cover ul.sport-icon-list li.list-inline-item .sport-name { min-width: 64px; text-align: center; }
+
+.sport-tabs-arrow { padding: 15px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item:not(:last-child) { margin-bottom: 15px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title { background-color: #6f0605; padding: 5px 10px; color: #FFFFFF; margin-bottom: 5px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title > span { line-height: 24px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title .sport-icon { float: left; margin-right: 10px; width: 24px; height: 24px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title .sport-icon img { max-width: 24px; vertical-align: top; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .toggle-button { top: 0; position: relative; vertical-align: top; height: 24px; font-size: 0; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .slide-toggle { display: none; line-height: 24px; vertical-align: top; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .slide-toggle.active { display: block; font-size: 20px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .slide-toggle.fa-minus { opacity: 0.5; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .btn-delete { font-size: 14px; height: auto; line-height: 16px; border-color: #e70000; background: #000000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .btn-delete .fa { color: #e70000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item:not(:last-child) { margin-bottom: 7px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info { background: #3e3e3e; padding: 4px 8px; width: 90px; font-size: 12px; line-height: 16px; text-align: center; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info > span { font-size: 12px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info .match-date { color: #9e9e9e; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info .match-time { color: #FFFFFF; font-weight: bold; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info { background: #2d2d2d; min-width: 210px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .mh-title { line-height: 40px; padding-left: 5px; font-size: 14px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .mh-title img { display: inline-block; margin-right: 5px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .info-label { border: 1px solid #aa2727; background: rgba(170, 39, 39, 0.56); min-width: 56px; font-size: 12px; line-height: 22px; text-align: center; height: 24px; float: right; margin-top: 8px; margin-right: 5px; font-weight: bold; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .info-label.label-red { border: 1px solid #aa2727; background: #7D2D2C; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .info-label.label-gray { border: 1px solid #939393; background: #5D5D5D; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .info-label.label-green { border: 1px solid #8AA53E; background: #5B7423; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd { padding: 0; background: #2d2d2d; width: 260px; position: relative; overflow: hidden; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd a { color: #FFFFFF; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 14px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 40px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .team-icon { min-width: 40px; margin-right: 3px; text-align: center; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .team-icon img { max-height: 40px; display: inline-block; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .team-name { padding-right: 22px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount { background: #3e3e3e; min-width: 64px; line-height: 40px; height: 40px; text-align: center; font-weight: bold; -ms-flex-item-align: end; align-self: flex-end; margin-left: auto; position: relative; font-size: 17px; padding-top: 2px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount::before { content: ''; position: absolute; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount.odd-plus::before { left: 24px; background: url("../img/plus.png") no-repeat; width: 13px; height: 13px; margin-left: -45px; top: 13px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount.odd-minus::before { left: 24px; background: url("../img/minus.png") no-repeat; width: 13px; height: 3px; margin-left: -45px; top: 18px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount.odd-under::before { left: 24px; background: url("../img/under-arrow.png") no-repeat; width: 19px; height: 19px; margin-left: -48px; top: 10px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount.odd-over::before { left: 24px; background: url("../img/over-arrow.png") no-repeat; width: 19px; height: 19px; margin-left: -48px; top: 10px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-selected { background: #dbaa00; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-selected a { color: #000000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-selected .odd-amount { background: #db9000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-won { background: #0e9700; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-won a { color: #000000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-won .odd-amount { background: #007220; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-loss { background: #6f0000; color: #FFFFFF; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-loss a { color: #FFFFFF; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.team-loss .odd-amount { background: #440500; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.odd-center { background: #2d2d2d; width: 128px; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.odd-center a > span { padding: 2px 5px 0; color: #FFFFFF; text-align: center; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.odd-center a .odd-amount { position: relative; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text > span { display: inline-block; line-height: 38px; text-align: center; min-width: 56px; border: 1px solid transparent; background: #000000; font-size: 13px; background: #2d2d2d; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-blue { border-color: #237F96; color: #237F96; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-red { border-color: #BA1D24; color: #BA1D24; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-green { border-color: #8AA53E; color: #8AA53E; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-yellow { border-color: #FFD000; color: #FFD000; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-final-score { background: #2d2d2d; min-width: 56px; max-width: 64px; text-align: center; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-final-score > span { display: inline-block; line-height: 40px; font-size: 17px; background: #2d2d2d; font-weight: bold; }
+.sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-final-result > span { display: inline-block; line-height: 40px; text-align: center; font-size: 14px; background: #2d2d2d; padding: 0 10px; min-width: 72px; }
+
+.custom-select option { background-color: #000000 !important; color: #fff !important; }
+
+/* 01 HEADER / NAVBAR / FOOTER
+============================= */
+.header-top { padding-top: 20px; padding-bottom: 20px; background: #000000 url("../img/header-top.jpg") no-repeat center top; }
+.header-top .logo-wrap { margin-top: 2px; }
+.header-top .logo-wrap a { display: block; }
+.header-top .logo-wrap a img { height: 24px; }
+.header-top .price-coin { margin-left: 88px; }
+.header-top .price-coin .btn { min-width: 118px; font-size: 14px; font-weight: bold; }
+.header-top .price-coin .btn:last-child .btn-icon { margin-right: 10px; }
+.header-top .sport-casino .balance-item { font-weight: bold; font-size: 12px; }
+.header-top .sport-casino .balance-item span { min-width: 104px; margin-top: 2px; font-size: 14px; height: 22px; line-height: 22px; padding-top: 1px; padding-left: 5px; display: block; background: #720200; color: #FFFFFF; letter-spacing: 1px; }
+
+.navbar-cover .navbar-top { background: #2d2e38; background: -webkit-gradient(linear, left top, left bottom, from(#2d2e38), to(#17181e)); background: linear-gradient(to bottom, #2d2e38, #17181e); width: 100%; }
+.navbar-cover .navbar-top .main-nav-list { margin-left: -10px; }
+.navbar-cover .navbar-top .main-nav-list > li.nav-item { padding: 0; }
+.navbar-cover .navbar-top .main-nav-list > li.nav-item a.nav-link { display: block; padding: 16px 10px; line-height: 16px; color: #FFFFFF; font-size: 14px; letter-spacing: 1px; text-decoration: none; text-shadow: 2px 2px 0 #000000; }
+.navbar-cover .navbar-top .main-nav-list > li.nav-item a.nav-link:focus, .navbar-cover .navbar-top .main-nav-list > li.nav-item a.nav-link:hover { opacity: 0.80; }
+.navbar-cover .navbar-top .main-nav-list > li.nav-item a.nav-link.active { font-weight: bold; }
+.navbar-cover .navbar-top .user-nav-list { background-color: #191a20; }
+.navbar-cover .navbar-top .user-nav-list > li { padding: 0; }
+.navbar-cover .navbar-top .user-nav-list > li a { display: block; }
+.navbar-cover .navbar-top .user-nav-list li.user-name .btn { font-size: 12px; padding: 12px 8px; height: auto; }
+.navbar-cover .navbar-top .user-nav-list li.user-name .btn .btn-icon { display: inline-block; float: left; width: 24px; height: 24px; margin-right: 10px; }
+.navbar-cover .navbar-top .user-nav-list li.user-name .btn .btn-icon img { max-height: 24px; vertical-align: middle; }
+.navbar-cover .navbar-top .user-nav-list li.user-name .btn .user-level { margin-left: 10px; color: #c7c7c7; }
+.navbar-cover .navbar-top .user-nav-list li.message .btn-message { position: relative; border: 0; margin-left: 5px; margin-right: 10px; padding: 12px 10px; height: auto; background: none; }
+.navbar-cover .navbar-top .user-nav-list li.message .btn-message .btn-icon { width: auto; float: none; }
+.navbar-cover .navbar-top .user-nav-list li.message .btn-message .btn-icon img { vertical-align: middle; }
+.navbar-cover .navbar-top .user-nav-list li.message .btn-message .message-count { position: absolute; display: block; right: 0; top: 5px; width: 20px; height: 20px; line-height: 20px; text-align: center; background-color: #88b01e; border-radius: 50%; color: #fff; padding-top: 1px; font-size: 14px; }
+.navbar-cover .navbar-top .user-nav-list li.user-logout .btn { height: auto; border-left: 1px solid rgba(255, 255, 255, 0.1); padding: 12px 10px; }
+.navbar-cover .navbar-top .user-nav-list li.user-logout .btn-icon { display: block; float: none; }
+.navbar-cover .navbar-top .user-nav-list li.user-logout .btn-icon img { vertical-align: middle; margin-bottom: 2px; }
+.navbar-cover .navbar-bottom { position: absolute; width: 100%; left: 0; z-index: 100; height: 29px; background: -webkit-gradient(linear, left top, left bottom, from(#8b0200), to(#590200)); background: linear-gradient(to bottom, #8b0200 0%, #590200 100%); background-repeat-x: no-repeat; background-size: 20% 100%; }
+.navbar-cover .navbar-bottom .container { position: relative; }
+.navbar-cover .navbar-bottom .sub-nav-list { margin-left: -10px; padding-right: 30px; height: 29px; }
+.navbar-cover .navbar-bottom .sub-nav-list .nav-item a { display: block; padding: 6px 10px; line-height: 16px; font-size: 12px; }
+.navbar-cover .navbar-bottom .submenu-bg { background: url("../img/submenu-bg.png") no-repeat center right; height: 29px; float: left; display: inline-block; position: absolute; left: -144px; width: 456px; z-index: -1; }
+
+.main-footer { text-align: left; background: url("../img/desktop-footerbg.png") no-repeat center bottom; margin-top: 10px; height: 320px; background-size: 2400px; padding-top: 65px; }
+.main-footer .footer-logo { margin-bottom: 38px; margin-top: 20px; }
+.main-footer .footer-content { margin-bottom: 44px; }
+.main-footer .footer-content p { color: #fff; opacity: 0.75; font-size: 14px; margin-bottom: 10px; }
+
+/* ================ HOMEPAGE
+======================================================= */
+.header-bar { margin-bottom: 20px; }
+.header-bar .header-slider { width: 950px; padding: 0 5px; }
+.header-bar .header-slider .slider-for { margin-bottom: 0; width: 940px; }
+.header-bar .header-slider .slider-nav { max-width: 100%; }
+.header-bar .hero-notifications { width: 370px; padding: 0 5px; }
+.header-bar .hero-notifications .n-box-cover { height: 334px; overflow: hidden; margin-bottom: 9px; padding: 14px 8px 0; }
+.header-bar .hero-notifications .n-box-cover h3 { border-bottom: 2px solid #c1131d; color: #fff; font-size: 16px; padding-bottom: 8px; margin-top: 0; margin-bottom: 2px; padding: 0 10px 10px; }
+.header-bar .hero-notifications .n-box-cover h3 img { display: inline-block; vertical-align: middle; margin-right: 10px; }
+.header-bar .hero-notifications .n-box-cover ul.n-list-cover { display: block; height: calc(100% - 38px); }
+.header-bar .hero-notifications .n-box-cover ul.n-list-cover li { color: #FFFFFF; font-size: 14px; line-height: 16px; position: relative; padding: 6px 10px 6px 88px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; max-width: 100%; }
+.header-bar .hero-notifications .n-box-cover ul.n-list-cover li:not(:last-child) { border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+.header-bar .hero-notifications .n-box-cover ul.n-list-cover li span { color: #FFFFFF; opacity: 0.6; font-size: 13px; position: absolute; left: 0; margin-top: 1px; letter-spacing: 1px; }
+.header-bar .hero-notifications .hn-buttons .btn-img { padding: 9px; position: relative; }
+.header-bar .hero-notifications .hn-buttons .talk-btn { border: 1px solid #FBE303; background: #000000; padding-top: 13px; }
+.header-bar .hero-notifications .hn-buttons .talk-btn > span { display: block; color: #FFFFFF; letter-spacing: 1px; }
+.header-bar .hero-notifications .hn-buttons .talk-btn > span small { color: #6E6E6E; letter-spacing: 0; font-size: 12px; }
+.header-bar .hero-notifications .hn-buttons .talk-btn img { position: absolute; right: 10px; top: 11px; }
+.header-bar .hero-notifications .hn-buttons .support-btn { background: #fad446; color: #222222; padding-top: 13px; }
+.header-bar .hero-notifications .hn-buttons .support-btn > span { display: block; font-weight: bold; letter-spacing: 1px; font-size: 19px; line-height: 16px; }
+.header-bar .hero-notifications .hn-buttons .support-btn > span small { color: #6E6E6E; letter-spacing: 0; font-size: 12px; }
+.header-bar .hero-notifications .hn-buttons .support-btn img { position: absolute; right: 10px; top: 5px; }
+
+.home-events { margin-bottom: 20px; }
+.home-events .event-box h3 { font-size: 16px; color: #fff; margin: 0; background: black; padding: 8px 15px; border-top: 2px solid #c1131d; font-weight: bold; }
+.home-events .event-box .img-box { padding-top: 320px; background-size: cover; background-position: center top; }
+.home-events .event-box .img-box.image-01 { background-image: url("../img/event1.jpg"); }
+.home-events .event-box .img-box.image-02 { background-image: url("../img/event2.jpg"); }
+.home-events .event-box .img-box.image-03 { background-image: url("../img/event3.jpg"); }
+.home-events .event-box .img-box.image-04 { background-image: url("../img/event4.jpg"); }
+.home-events .event-box .event-btn { background: #000000; padding: 10px; }
+.home-events .event-box .event-btn .btn { height: 40px; line-height: 32px; }
+
+.user-status .home-list-box { padding: 8px; overflow: hidden; height: 370px; }
+.user-status .home-list-box > ul.list-unstyled { height: 304px; }
+.user-status .home-list-box > ul.list-unstyled li { display: block; }
+.user-status .home-list-box > ul.list-unstyled li:not(:last-child) { border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+.user-status .home-list-box > ul.list-unstyled li p { margin-bottom: 0; font-size: 14px; line-height: 17px; color: #FFFFFF; padding: 6px 0; }
+.user-status .home-list-box > ul.list-unstyled li p > span { display: inline-block; }
+.user-status .home-list-box > ul.list-unstyled li p .time { letter-spacing: 1px; margin-right: 5px; opacity: 0.5; font-weight: bold; }
+.user-status .home-list-box > ul.list-unstyled li p .won-price { float: right; font-weight: bold; text-align: right; }
+.user-status .home-list-box > ul.list-unstyled li p .won-price .folder { display: inline-block; margin-right: 30px; }
+.user-status .home-flash-chrome { padding: 8px; overflow: hidden; height: 370px; }
+.user-status .home-flash-chrome .hfc-content { text-align: center; height: 310px; }
+.user-status .home-flash-chrome .hfc-content .btn { height: 40px; line-height: 32px; width: 180px; }
+.user-status .home-flash-chrome .hfc-content img { margin-bottom: 15px; }
+.user-status .home-flash-chrome .hfc-content p { margin: 13px 0 45px; }
+.user-status .home-flash-chrome .hfc-content .flash-col { padding-top: 2px; }
+
+/* ================ MODAL PAGES
+======================================================= */
+.modal .modal-dialog { max-width: -webkit-max-content; max-width: -moz-max-content; max-width: max-content; }
+.modal .modal-content { border-radius: 0; background-color: #0e0000; border: 1px solid #9e0000; min-width: 940px; width: 940px; }
+.modal .modal-content .modal-header { padding: 6px 15px; border-bottom: 0; border-radius: 0; position: relative; background: rgba(199, 5, 0, 0.54); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.54)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.54), rgba(0, 0, 0, 0)); margin: 5px; }
+.modal .modal-content .modal-header h4 { color: #fff; font-size: 19px; line-height: 24px; display: inline-block; font-weight: bold; }
+.modal .modal-content .modal-header .close { position: absolute; right: 15px; padding: 0; margin: 0; top: 2px; color: #fff; opacity: 1; font-size: 32px; }
+.modal .modal-content .btn-request { height: 40px; line-height: 32px; margin: 0 auto; font-size: 17px; letter-spacing: 1px; }
+.modal .modal-content .btn-request > span { padding: 0 40px; }
+.modal .modal-content .nav-transfer-tabs .nav-item .nav-link { height: 40px; line-height: 32px; font-size: 17px; letter-spacing: 1px; }
+.modal .modal-content .custom-checkbox { line-height: 24px; }
+.modal .modal-content .alert-text { font-size: 15px; }
+.modal .modal-content hr.dashed { border: 1px dashed rgba(255, 255, 255, 0.1); border-width: 2px; }
+
+/* 01 Balance Transfer
+============================= */
+.transfer-cover { border: 1px solid #9dbf43; background: #1f1f1f; padding: 15px 5px; }
+.transfer-cover .deposit-text { text-align: center; margin-bottom: 10px; font-size: 20px; opacity: 0.5; }
+.transfer-cover .transfer-radio-boxes { padding: 5px 0; background: #313131; }
+.transfer-cover .transfer-radio-boxes .transfer-label { display: block; text-align: center; margin-bottom: 0; padding: 0 5px; }
+.transfer-cover .transfer-radio-boxes .transfer-label .logo-wrap { width: 100%; height: 100%; border: 2px solid transparent; text-align: center; height: 64px; line-height: 46px; cursor: pointer; padding: 6px 5px; display: block; }
+.transfer-cover .transfer-radio-boxes .transfer-label .logo-wrap img { margin: 0 auto; max-width: 100%; max-height: 100%; }
+.transfer-cover .transfer-radio-boxes .transfer-label > input { visibility: hidden; position: absolute; }
+.transfer-cover .transfer-radio-boxes .transfer-label > input:checked + .logo-wrap { border: 2px solid #86a820; }
+.transfer-cover .transfer-radio-boxes .transfer-label.border-x { border-right: 1px solid rgba(255, 255, 255, 0.15); border-left: 1px solid rgba(255, 255, 255, 0.15); }
+.transfer-cover .transfer-radio-boxes hr { border-color: rgba(255, 255, 255, 0.2); margin: 5px 10px; }
+.transfer-cover .transfer-radio-boxes.no-bg { background: none; }
+.transfer-cover .deposit-amount-cover { margin-bottom: 0; }
+.transfer-cover .deposit-amount-cover .amount-input .deposit-left { background-color: #515151; }
+.transfer-cover .deposit-amount-cover .amount-input .deposit-left label { min-width: 100px; }
+.transfer-cover .deposit-amount-cover .amount-input .deposit-left img { max-width: 90px; }
+.transfer-cover .deposit-amount-cover .amount-input .deposit-left .info-text { display: inline-block; float: right; line-height: 24px; }
+
+/* 02 Point Transfer
+============================= */
+.point-table-cover { border: 1px solid #9dbf43; padding: 15px 5px; }
+.point-table-cover .point-request-cover { padding: 5px; margin-bottom: 10px; }
+.point-table-cover .point-request-cover .request-title { font-size: 24px; line-height: 32px; padding-left: 15px; }
+.point-table-cover .point-request-cover .request-right .request-amount { font-size: 24px; border: 1px solid #ff7800; padding: 0 30px; vertical-align: top; line-height: 30px; margin-right: -1px; }
+.point-table-cover .point-request-cover .digital, .point-table-cover .point-request-cover .bonus-calculate-cover .bonus-amount .amount-title .amount-number, .bonus-calculate-cover .bonus-amount .amount-title .point-table-cover .point-request-cover .amount-number { color: #ffffff; font-size: 34px; line-height: 32px; vertical-align: top; display: inline-block; margin-right: 20px; }
+.point-table-cover .point-request-cover .btn-point-request { float: right; }
+.point-table-cover .point-request-cover .btn-point-request > span { padding: 0 32px; }
+.point-table-cover .point-table { background: none; }
+.point-table-cover .point-table td, .point-table-cover .point-table th, .point-table-cover .point-table thead th { border: 0; }
+.point-table-cover .point-table thead tr th { text-align: center; }
+.point-table-cover .point-table tbody tr { border-bottom: 6px solid #0f0000; }
+.point-table-cover .point-table tbody td { text-align: center; font-size: 15px; line-height: 24px; padding: 5px; background: #313131; }
+.point-table-cover .point-table tbody .digital, .point-table-cover .point-table tbody .bonus-calculate-cover .bonus-amount .amount-title .amount-number, .bonus-calculate-cover .bonus-amount .amount-title .point-table-cover .point-table tbody .amount-number { font-size: 23px; letter-spacing: 1px; border-right: 1px solid rgba(255, 255, 255, 0.24); border-left: 1px solid rgba(255, 255, 255, 0.24); }
+
+/* 03 Account Settings
+============================= */
+.account-form-cover .form-group { margin-bottom: 8px; }
+.account-form-cover .form-group label { margin-bottom: 0; font-size: 18px; width: 274px; line-height: 32px; margin-right: 15px; text-align: right; }
+.account-form-cover .form-group .form-control { width: 364px; font-size: 16px; line-height: 16px; padding: 4px 9px; border: 0; border-radius: 0; padding: 8px 10px; background: #383838; color: #fff; }
+.account-form-cover .form-group .input-group { width: auto; }
+.account-form-cover .form-group .input-group .input-group-text { background: #383838; border: 0; border-radius: 0; }
+.account-form-cover .form-group .input-group .input-group-text i.fa { color: #999; }
+.account-form-cover .form-group .input-group .form-control { width: 331px; }
+.account-form-cover .form-group .btn-inner-white > span { padding: 0 20px; }
+.account-form-cover .bank-settings-form { background: #181818; }
+.account-form-cover .bank-settings-form .custom-select { font-size: 16px; width: 364px; border: 0; border-radius: 0; color: #FFFFFF; background-color: #383838; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); }
+
+/* 04 Letter Box
+============================= */
+.letter-box-list { margin-top: 20px; margin-bottom: 30px; }
+.letter-box-list .list-titles > span { line-height: 32px; font-size: 22px; color: #FFFFFF; font-weight: bold; }
+.letter-box-list .list-titles > span:first-child { color: #FFFFFF; }
+.letter-box-list li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 24px; }
+.letter-box-list li:not(:last-child) { border-bottom: 1px solid rgba(255, 255, 255, 0.32); }
+.letter-box-list li > span { padding: 4px 15px; }
+.letter-box-list li > span:first-child { width: 80px; text-align: center; border-right: 1px solid rgba(255, 255, 255, 0.32); font-size: 22px; color: rgba(255, 255, 255, 0.5); }
+.letter-box-list li > span:nth-child(2) { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.letter-box-list li > span:last-child { width: 140px; border-left: 1px solid rgba(255, 255, 255, 0.32); }
+
+/* 05 Support Page & Submit Ticket
+============================= */
+.support-page-body .support-header .btn > span { padding: 0 40px; }
+.support-page-body .support-header .talk-btn { border: 1px solid #FBE303; background: #000000; padding: 2px 10px; }
+.support-page-body .support-header .talk-btn > span { display: inline-block; color: #FFFFFF; font-weight: bold; line-height: 12px; margin-right: 10px; position: relative; top: 3px; }
+.support-page-body .support-header .talk-btn > span small { font-size: 12px; }
+.support-page-body .support-header .talk-btn img { float: right; }
+.support-page-body .support-list-cover { background: #1f1f1f; overflow: hidden; padding-left: 5px; padding-top: 5px; }
+.support-page-body .support-list-cover ul.support-list { height: 263px; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item > a { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item > a > span { line-height: 24px; padding: 4px 15px; color: rgba(255, 255, 255, 0.55); font-size: 14px; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item:not(:last-child) { border-bottom: 1px solid rgba(255, 255, 255, 0.32); }
+.support-page-body .support-list-cover ul.support-list li.s-list-item.active > a { background: #414c23; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item.active > a > span { color: #FFFFFF; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .time { width: 104px; text-align: center; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .support-title { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .type { width: 112px; text-align: center; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .status { width: 112px; text-align: center; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .status .fa { font-size: 24px; vertical-align: middle; padding-top: 2px; }
+.support-page-body .support-list-cover ul.support-list li.s-list-item .support-title, .support-page-body .support-list-cover ul.support-list li.s-list-item .time, .support-page-body .support-list-cover ul.support-list li.s-list-item .type { border-right: 1px solid rgba(255, 255, 255, 0.32); }
+.support-page-body .support-list-cover ul.support-list li.support-list-header > a > span { color: #FFFFFF; font-size: 18px; }
+.support-page-body .support-chat-cover { background: #1f1f1f; }
+.support-page-body .support-chat-cover .s-chat-header { background: #1f1f1f; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top { background: #3d3d3d; padding: 5px 10px; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top .s-chat-title { font-size: 19px; line-height: 32px; color: #d0d0d0; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top .s-chat-actions .s-chat-statu { font-size: 14px; line-height: 32px; display: inline-block; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top .s-chat-actions .s-chat-statu .fa { font-size: 24px; vertical-align: middle; padding-top: 2px; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top .s-chat-actions .btn-inner-red { font-size: 14px; padding: 2px; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-top .s-chat-actions .btn-inner-red > span { padding: 0 20px; line-height: 26px; background: rgba(199, 5, 0, 0.85); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.85)), to(rgba(199, 5, 0, 0.5))); background: linear-gradient(to right, rgba(199, 5, 0, 0.85), rgba(199, 5, 0, 0.5)); }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-bottom { background: #2e2e2e; padding: 0 10px; }
+.support-page-body .support-chat-cover .s-chat-header .sc-header-bottom .sc-time { color: #5d5d5d; line-height: 26px; font-size: 14px; }
+.support-page-body .support-chat-cover .s-chat-body { padding: 20px 10px; height: 290px; overflow: hidden; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 40px; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item:last-child { padding-bottom: 10px; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.user-box { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.user-box .sc-message-box { text-align: right; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.user-box .sc-message-box .sc-message-sender { right: 0; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.user-box .sc-message-box .sc-message-time { left: -40px; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.customer-box { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.customer-box .sc-message-box { text-align: left; background: rgba(133, 168, 38, 0.45); }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.customer-box .sc-message-box .sc-message-sender { left: 0; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item.customer-box .sc-message-box .sc-message-time { right: -40px; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box { font-size: 15px; background: rgba(77, 77, 77, 0.6); max-width: 380px; padding: 5px 10px; line-height: 20px; color: #FFFFFF; position: relative; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box .sc-message-sender { position: absolute; top: -22px; font-size: 13px; color: #ababab; }
+.support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box .sc-message-time { position: absolute; font-size: 12px; color: rgba(255, 255, 255, 0.4); bottom: -7px; text-align: right; }
+.support-page-body .support-chat-cover .s-chat-footer { padding: 10px; }
+.support-page-body .support-chat-cover .s-chat-footer .form-control { border-radius: 0; border-color: #565656; background: #000000; color: #FFFFFF; font-size: 14px; }
+.support-page-body .support-chat-cover .s-chat-footer .btn { height: 38px; }
+.support-page-body .support-chat-cover .s-chat-footer .btn > span { padding: 0 35px; line-height: 30px; }
+.support-page-body .submit-ticket-cover .s-ticket-header .form-control { background: #4e4e4e; padding: 10px 25px; }
+.support-page-body .submit-ticket-cover .s-ticket-header .custom-select { height: 48px; color: #fff; border: 0; background-color: #3d3d3d; border-radius: 0; padding-left: 30px; padding-right: 50px; font-size: 18px; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); }
+.support-page-body .submit-ticket-cover .s-ticket-body { background: #1f1f1f; }
+.support-page-body .submit-ticket-cover .s-ticket-body .form-control { background: #1f1f1f; padding: 15px 20px; font-size: 18px; min-height: 200px; }
+.support-page-body .submit-ticket-cover .s-ticket-footer { background: #2e2e2e; padding: 5px 10px; }
+.support-page-body .submit-ticket-cover .s-ticket-footer .btn { width: 120px; }
+.support-page-body .submit-ticket-cover .form-control { border: none; border-radius: 0; color: #FFFFFF; }
+.support-page-body .submit-ticket-cover .form-control:focus { -webkit-box-shadow: none; box-shadow: none; }
+
+/* 06 Point Shop
+============================= */
+#pointShopModal .modal-content { width: 1236px; }
+
+.point-shop-body .point-shop-header .nav .nav-link { background: black; background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0.24))); background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.24)); border-bottom: 1px solid #d5b0b0; padding: 7px 30px; font-size: 18px; letter-spacing: 1px; }
+.point-shop-body .point-shop-header .nav .nav-link.active { background: rgba(128, 8, 9, 0); background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 8, 9, 0)), to(#800809)); background: linear-gradient(to bottom, rgba(128, 8, 9, 0), #800809); }
+.point-shop-body .point-shop-header .ps-header-right .btn-km { width: 350px; }
+.point-shop-body .point-shop-boxes .point-shop-item { background: #2d2121; padding: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 10px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image { width: 210px; height: 272px; border: 1px solid #cb0602; background: #2b100f; position: relative; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image .ps-item-labels { position: absolute; width: 100%; padding: 5px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image .ps-item-labels .image-label { font-size: 11px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase; background: #000000; padding: 2px 5px; vertical-align: top; display: inline-block; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image .ps-item-labels .image-label.yellow { background: #ff9600; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image .ps-item-labels .image-label.orange { background: #ff4800; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-image .ps-item-labels .image-label.green { background: #86a40c; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body { margin-left: 10px; position: relative; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-header { margin-bottom: 10px; margin-top: 5px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-header .item-title { font-size: 17px; margin-bottom: 3px; font-weight: bold; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-header .item-price { font-size: 16px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-details { margin-bottom: 20px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-details .detail-row { line-height: 24px; font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-details .detail-row .detail-title { color: #acacac; min-width: 80px; margin-right: 10px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-details .detail-row .detail-info { width: 100%; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-details .detail-row .detail-info .option-select { width: 100%; border: 0; height: 24px; line-height: 24px; background: rgba(255, 255, 255, 0.24) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center; background-size: 8px 10px; padding-top: 0; padding-bottom: 0; vertical-align: top; padding-left: 5px; -webkit-box-shadow: none; box-shadow: none; opacity: 1; border-radius: 0; color: #fff; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-copy p, .point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-content .ps-item-copy ul li { font-size: 14px; line-height: 16px; color: #d5d5d5; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-footer { bottom: 0; width: 100%; position: absolute; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-footer input { border: 1px solid #7f7878; padding: 0 4px; background-color: transparent; text-align: center; color: #fff; width: 56px; font-size: 15px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-item-footer .ps-item-buttons .btn-stroke { width: 84px; background: none; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-option-box { border: 1px solid #790909; background: rgba(56, 0, 0, 0.9); position: absolute; width: 100%; height: 100%; top: 0; padding: 10px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-option-box .ps-option-header { margin-bottom: 20px; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-option-box .ps-option-header .option-title { font-size: 19px; font-weight: bold; margin-bottom: 0; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-option-box .ps-option-header .close { color: #fff; }
+.point-shop-body .point-shop-boxes .point-shop-item .ps-item-body .ps-option-box .btn-option { margin-top: 12px; height: 26px; line-height: 24px; padding: 0 25px; font-size: 14px; float: right; background: rgba(255, 255, 255, 0.24); }
+
+/* 07 Betting History
+============================= */
+#bettingHistoryModal .modal-content { width: 1128px; }
+
+.history-tab-filter { margin-top: 20px; padding-bottom: 12px; }
+.history-tab-filter .select-history-filter { padding-left: 15px; }
+.history-tab-filter .select-history-filter label { font-size: 14px; margin-bottom: 5px; padding-left: 10px; }
+.history-tab-filter .select-history-filter .custom-select { font-size: 16px; width: 234px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 0; color: #FFFFFF; background-color: #000000; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); line-height: 1; font-size: 14px; }
+.history-tab-filter .current-balance { padding-top: 6px; }
+.history-tab-filter .current-balance .balance-title { color: #9d9d9d; font-weight: bold; margin-bottom: 7px; }
+.history-tab-filter .current-balance .kartika, .history-tab-filter .current-balance .pagination .list-inline-item a, .pagination .list-inline-item .history-tab-filter .current-balance a, .history-tab-filter .current-balance .sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount, .sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .history-tab-filter .current-balance .odd-amount, .history-tab-filter .current-balance .header-top .sport-casino .balance-item span, .header-top .sport-casino .balance-item .history-tab-filter .current-balance span, .history-tab-filter .current-balance .navbar-cover .navbar-top .user-nav-list li.user-name, .navbar-cover .navbar-top .user-nav-list .history-tab-filter .current-balance li.user-name, .history-tab-filter .current-balance .navbar-cover .navbar-top .user-nav-list li.message .btn-message .message-count, .navbar-cover .navbar-top .user-nav-list li.message .btn-message .history-tab-filter .current-balance .message-count, .history-tab-filter .current-balance .header-bar .hero-notifications .n-box-cover ul.n-list-cover li span, .header-bar .hero-notifications .n-box-cover ul.n-list-cover li .history-tab-filter .current-balance span, .history-tab-filter .current-balance .header-bar .hero-notifications .hn-buttons .talk-btn > span, .header-bar .hero-notifications .hn-buttons .history-tab-filter .current-balance .talk-btn > span, .history-tab-filter .current-balance .support-page-body .support-header .talk-btn > span, .support-page-body .support-header .history-tab-filter .current-balance .talk-btn > span, .history-tab-filter .current-balance .support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box .sc-message-time, .support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box .history-tab-filter .current-balance .sc-message-time, .history-tab-filter .current-balance .select-date-filter .list-inline-item a, .history-tab-filter .select-date-filter .list-inline-item .current-balance a, .history-tab-filter .current-balance .sport-tabs-footer .st-footer-item .st-footer-copy .text-green, .sport-tabs-footer .st-footer-item .st-footer-copy .history-tab-filter .current-balance .text-green, .history-tab-filter .current-balance .history-table tbody .amount, .history-table tbody .history-tab-filter .current-balance .amount, .history-tab-filter .current-balance .history-table tbody .award, .history-table tbody .history-tab-filter .current-balance .award, .history-tab-filter .current-balance .history-table tbody .odd, .history-table tbody .history-tab-filter .current-balance .odd, .history-tab-filter .current-balance .match-result-table tbody tr td.table-score > div, .match-result-table tbody tr .history-tab-filter .current-balance td.table-score > div, .history-tab-filter .current-balance .match-result-table tbody tr td.table-date, .match-result-table tbody tr .history-tab-filter .current-balance td.table-date, .history-tab-filter .current-balance .match-result-table tbody tr td.table-odd .odd-amount, .match-result-table tbody tr td.table-odd .history-tab-filter .current-balance .odd-amount, .history-tab-filter .current-balance .live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-time, .live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .history-tab-filter .current-balance .sport-time, .history-tab-filter .current-balance .sidebar-betting-cover .coupon-body .coupon-match-item .match-header .btn-close, .sidebar-betting-cover .coupon-body .coupon-match-item .match-header .history-tab-filter .current-balance .btn-close, .history-tab-filter .current-balance .sidebar-betting-cover .coupon-body .coupon-match-item .bet-info .amount, .sidebar-betting-cover .coupon-body .coupon-match-item .bet-info .history-tab-filter .current-balance .amount, .history-tab-filter .current-balance .sidebar-casino .casino-balance-cover .balance-header .main-balace, .sidebar-casino .casino-balance-cover .balance-header .history-tab-filter .current-balance .main-balace, .history-tab-filter .current-balance .sidebar-casino .casino-balance-cover .balance-history li p span, .sidebar-casino .casino-balance-cover .balance-history li p .history-tab-filter .current-balance span, .history-tab-filter .current-balance .sidebar-casino .transfer-buttons .transfer-footer .change-amount, .sidebar-casino .transfer-buttons .transfer-footer .history-tab-filter .current-balance .change-amount, .history-tab-filter .current-balance .promotion-box .promo-collapse .promotion-title, .promotion-box .promo-collapse .history-tab-filter .current-balance .promotion-title, .history-tab-filter .current-balance .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item h3, .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item .history-tab-filter .current-balance h3, .history-tab-filter .current-balance .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item p, .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item .history-tab-filter .current-balance p, .history-tab-filter .current-balance .promotion-box .promo-body .promo-body-inner .p-body-copy p, .promotion-box .promo-body .promo-body-inner .p-body-copy .history-tab-filter .current-balance p, .history-tab-filter .current-balance .inplay .main-content .coming-soon-header h1, .inplay .main-content .coming-soon-header .history-tab-filter .current-balance h1, .history-tab-filter .current-balance .login-wrapper .login-inner .btn-inner-green, .login-wrapper .login-inner .history-tab-filter .current-balance .btn-inner-green, .history-tab-filter .current-balance .login-wrapper .login-inner .btn-inner-white.active, .login-wrapper .login-inner .history-tab-filter .current-balance .btn-inner-white.active { font-size: 20px; }
+.history-tab-filter .input-group { width: 304px; }
+.history-tab-filter .input-group .search-input { font-size: 14px; line-height: 16px; padding: 4px 9px; border: 0; border-radius: 0; padding: 8px 10px; background: #383838; color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); }
+.history-tab-filter .input-group .input-group-prepend { width: 36px; line-height: 32px; position: absolute; right: 0; display: inline-block; text-align: center; padding-top: 2px; }
+.history-tab-filter .input-group .input-group-prepend .fa { font-size: 20px; }
+.history-tab-filter .select-date-filter .list-inline-item { height: 100%; }
+.history-tab-filter .select-date-filter .list-inline-item a { border: 1px solid #FFFFFF; font-size: 14px; padding: 2px 15px 0; display: block; height: 100%; line-height: 30px; }
+.history-tab-filter .select-date-filter .list-inline-item a.active { background: #475d17; border: 1px solid #6f9e33; }
+
+.history-tabs-arrow { padding: 0; }
+.history-tabs-arrow > ul.sport-match-list > li.sm-list-item { border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 20px; margin-bottom: 20px; }
+.history-tabs-arrow > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title > span { font-size: 14px; line-height: 24px; }
+
+.betting-history-header { margin: 0 15px; padding-top: 15px; border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+.betting-history-header ul.nav li.nav-item a.nav-link { font-size: 16px; color: rgba(255, 255, 255, 0.5); font-weight: bold; padding: 10px 60px; }
+.betting-history-header ul.nav li.nav-item a.nav-link.active { color: #FFFFFF; background: black; background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(199, 5, 0, 0.6))); background: linear-gradient(to bottom, black, rgba(199, 5, 0, 0.6)); }
+.betting-history-header .close { color: #FFFFFF; opacity: 1; border: 1px solid rgba(255, 255, 255, 0.3); font-size: 24px; width: 26px; height: 26px; }
+
+.sport-tabs-footer { border: 1px solid #304f5a; background: #19292e; background: -webkit-gradient(linear, left top, left bottom, from(#19292e), to(#253d46)); background: linear-gradient(to bottom, #19292e, #253d46); padding: 5px; margin-top: 15px; }
+.sport-tabs-footer .st-footer-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.sport-tabs-footer .st-footer-item:not(:first-child) { border-left: 1px solid #4b7b8d; padding-left: 5px; }
+.sport-tabs-footer .st-footer-item .svg-icon { margin-right: 15px; }
+.sport-tabs-footer .st-footer-item .st-footer-copy { line-height: 16px; font-size: 15px; }
+.sport-tabs-footer .st-footer-item .st-footer-copy .info-text { font-size: 12px; }
+.sport-tabs-footer .st-footer-item .st-footer-copy .text-green { font-size: 15px; }
+
+.history-tabs-cover .sport-tabs-nav .nav-link { padding: 7px 30px; color: #b8b8b8; font-size: 15px; }
+.history-tabs-cover .sport-tabs-nav .nav-link.active { color: #FFFFFF; }
+.history-tabs-cover ul.sport-icon-list { margin-top: 5px; }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item { vertical-align: top; }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item a { line-height: 24px; background: black; background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0.3))); background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.3)); }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: rgba(255, 255, 255, 0.5); }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item .sport-name { font-size: 14px; }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item .sport-icon { width: 24px; height: 24px; margin-right: 5px; }
+.history-tabs-cover ul.sport-icon-list li.list-inline-item .sport-icon img { height: 24px; }
+
+/* Other Modals
+============================= */
+.site-deposit-info { padding: 10px; border: 2px solid #86a820; }
+.site-deposit-info .info-row { background-color: #1f1f1f; width: 100%; padding: 10px 5px; }
+.site-deposit-info p { font-size: 20px; line-height: 24px; }
+.site-deposit-info .left-side { width: 128px; margin-right: 10px; padding-right: 10px; border-right: 1px solid rgba(255, 255, 255, 0.3); }
+.site-deposit-info .left-side p { text-align: right; display: block; color: rgba(255, 255, 255, 0.5); }
+
+.deposit-amount-cover { margin-bottom: 20px; }
+.deposit-amount-cover .amount-input .deposit-left { background-color: #1f1f1f; padding: 8px 15px; }
+.deposit-amount-cover .amount-input .deposit-left label.input-title { line-height: 24px; border-right: 1px solid rgba(255, 255, 255, 0.3); padding-right: 10px; font-size: 18px; text-align: right; color: rgba(255, 255, 255, 0.5); margin-bottom: 0; min-width: 120px; }
+.deposit-amount-cover .amount-input .deposit-left input { color: #ffffff; font-size: 26px; text-transform: uppercase; letter-spacing: 1.5px; border: 0; display: inline-block; max-width: 190px; height: 24px; padding: 0 10px; vertical-align: top; background: none; }
+.deposit-amount-cover .amount-input .deposit-left input:focus { outline: none; }
+.deposit-amount-cover .amount-input .deposit-left .username-input { font-size: 18px; }
+.deposit-amount-cover .amount-input .deposit-left .text-muted { line-height: 24px; }
+.deposit-amount-cover .amount-input .deposit-username { background-color: #1a1a21; font-size: 16px; text-align: center; padding: 10px 3px; line-height: 24px; }
+.deposit-amount-cover .btn-inner-green, .deposit-amount-cover .btn-inner-white.active { height: 40px; line-height: 32px; margin: 0 auto; display: block; font-size: 17px; letter-spacing: 1px; }
+.deposit-amount-cover .btn-inner-green > span, .deposit-amount-cover .btn-inner-white.active > span { padding: 0 50px; }
+.deposit-amount-cover .amount-buttons .btn { height: auto; line-height: 32px; }
+
+.bonus-calculate-cover { background-color: #1f1f1f; padding: 10px 15px; }
+.bonus-calculate-cover .bonus-amount .first-title { line-height: 28px; border-right: 1px solid rgba(255, 255, 255, 0.3); color: rgba(255, 255, 255, 0.5); padding-right: 10px; font-size: 18px; margin-right: 148px; }
+.bonus-calculate-cover .bonus-amount .amount-title { font-size: 18px; min-width: 304px; }
+.bonus-calculate-cover .bonus-amount .amount-title > span { display: inline-block; vertical-align: top; }
+.bonus-calculate-cover .bonus-amount .amount-title span:first-child { padding-right: 10px; margin-right: 10px; border-right: 1px solid rgba(255, 255, 255, 0.3); line-height: 28px; }
+.bonus-calculate-cover .bonus-amount .amount-title .amount-number { color: #000000; font-size: 20px; border: 1px solid #b9ff00; padding: 3px 10px; background: #7b9a29; }
+.bonus-calculate-cover .bonus-amount .amount-title .amount-number.number-dark { border-color: #FFFFFF; background: #7b7b7b; }
+.bonus-calculate-cover .bonus-buttons .btn { border-color: #b1b1b1; padding: 0; font-size: 15px; line-height: 32px; }
+.bonus-calculate-cover .bonus-buttons .btn .percentage { display: inline-block; float: left; background: #b1b1b1; margin-right: 5px; color: #000000; height: 30px; line-height: 32px; width: 32px; text-align: center; font-size: 13px; padding: 0; font-weight: bold; }
+.bonus-calculate-cover .bonus-buttons .btn .main-bonus { line-height: 26px; margin: 2px 2px 2px 34px; }
+.bonus-calculate-cover .bonus-buttons .btn.active { border-color: #c8e818; }
+.bonus-calculate-cover .bonus-buttons .btn.active .percentage { background: #c8e818; }
+.bonus-calculate-cover .bonus-buttons .btn.active .main-bonus { background: rgba(200, 232, 24, 0.33); background: -webkit-gradient(linear, left top, right top, from(rgba(200, 232, 24, 0.33)), to(rgba(200, 232, 24, 0))); background: linear-gradient(to right, rgba(200, 232, 24, 0.33), rgba(200, 232, 24, 0)); }
+
+#depositFirstNotice .deposit-content, #withdrawFirstNotice .deposit-content { padding: 20px 10px 10px; margin-top: 0; }
+#depositFirstNotice .deposit-content ul, #withdrawFirstNotice .deposit-content ul { max-width: 560px; margin: 20px auto auto; }
+#depositFirstNotice .deposit-content ul li, #withdrawFirstNotice .deposit-content ul li { color: rgba(255, 255, 255, 0.8); margin-bottom: 8px; }
+
+#letterBoxModal .modal-content { background: #440000; background: -webkit-gradient(linear, left top, right top, from(#440000), to(#0e0000)); background: linear-gradient(to right, #440000, #0e0000); }
+
+/* 02 TABLE
+============================= */
+.history-table { background: none; }
+.history-table thead th { color: #ffffff; text-transform: uppercase; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.2); font-size: 14px; padding: 8px 0; letter-spacing: 0.5px; border-top-color: rgba(211, 23, 23, 0.5); }
+.history-table thead th:not(:last-child) { border-right: 1px solid rgba(255, 255, 255, 0.2); }
+.history-table tbody td { text-align: center; font-size: 15px; vertical-align: middle; padding: 9px 10px; border-color: rgba(255, 255, 255, 0.2); }
+.history-table tbody .text-green { font-weight: bold; }
+.history-table tbody .table-logo { padding: 0 !important; }
+.history-table tbody .table-logo img { max-width: 100%; max-height: 12px; }
+.history-table tbody .amount, .history-table tbody .award, .history-table tbody .odd { font-size: 14px; padding-top: 8px; }
+.history-table tbody .time { line-height: 14px; font-size: 12px; }
+
+.match-result-table { background: none; }
+.match-result-table thead tr th { font-size: 15px; color: rgba(255, 255, 255, 0.38); text-align: center; font-weight: bold; }
+.match-result-table tbody tr td { vertical-align: middle; padding: 10px 5px; }
+.match-result-table tbody tr td.table-score > div { background: #2d2d2d; line-height: 32px; height: 32px; text-align: center; padding-top: 2px; }
+.match-result-table tbody tr td.table-date { text-align: center; font-size: 15px; line-height: 18px; }
+.match-result-table tbody tr td.table-league { font-size: 13px; line-height: 18px; }
+.match-result-table tbody tr td.odd-type .odd-icon { display: block; float: left; margin-right: 5px; }
+.match-result-table tbody tr td.odd-type span { font-size: 14px; vertical-align: text-top; }
+.match-result-table tbody tr td.table-odd { padding: 0 5px; width: 260px; }
+.match-result-table tbody tr td.table-odd div { color: #FFFFFF; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 14px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 32px; background: #2d2d2d; }
+.match-result-table tbody tr td.table-odd .team-name { padding-right: 22px; padding-left: 10px; font-size: 12px; }
+.match-result-table tbody tr td.table-odd .odd-amount { background: #3e3e3e; min-width: 64px; line-height: 32px; height: 32px; text-align: center; font-weight: bold; -ms-flex-item-align: end; align-self: flex-end; margin-left: auto; position: relative; font-size: 12px; padding-top: 2px; }
+.match-result-table tbody tr td.table-odd .odd-amount::before { content: ''; position: absolute; }
+.match-result-table tbody tr td.table-odd .odd-amount.odd-plus::before { left: 24px; background: url("../img/plus.png") no-repeat; width: 13px; height: 13px; margin-left: -45px; top: 9px; }
+.match-result-table tbody tr td.table-odd .odd-amount.odd-minus::before { left: 24px; background: url("../img/minus.png") no-repeat; width: 13px; height: 3px; margin-left: -45px; top: 14px; }
+.match-result-table tbody tr td.table-odd .odd-amount.odd-under::before { left: 24px; background: url("../img/under-arrow.png") no-repeat; width: 19px; height: 19px; margin-left: -48px; top: 5px; }
+.match-result-table tbody tr td.table-odd .odd-amount.odd-over::before { left: 24px; background: url("../img/over-arrow.png") no-repeat; width: 19px; height: 19px; margin-left: -48px; top: 5px; }
+.match-result-table tbody tr td.table-odd.team-selected > div { color: #000000; background: #dbaa00; color: #000000; }
+.match-result-table tbody tr td.table-odd.team-selected .odd-amount { background: #db9000; }
+.match-result-table tbody tr td.table-odd.odd-center { width: 128px; }
+.match-result-table tbody tr td.table-odd.odd-center div { background: #2d2d2d; }
+.match-result-table tbody tr td.table-odd.odd-center div > span { padding: 2px 5px 0; color: #FFFFFF; text-align: center; font-size: 12px; }
+.match-result-table tbody tr td.table-odd.odd-center div .odd-amount { position: relative; background: #3e3e3e; }
+
+.deposit-header { border: 1px solid #fff; padding: 4px 10px; }
+.deposit-header h2 { vertical-align: middle; margin-right: 40px; color: rgba(255, 255, 255, 0.57); font-size: 19px; margin: 0 40px 0 0; display: inline-block; position: relative; top: 4px; }
+.deposit-header a { position: relative; top: 1px; }
+
+.deposit-content { border: 1px solid white; margin-top: 10px; padding: 60px 40px; font-size: 17px; }
+.deposit-content .deposit-title { font-size: 25px; font-weight: bold; }
+.deposit-content span { color: white; }
+
+/* ================ SPORT PAGE
+======================================================= */
+.sport-betting-cover { border-top: 2px solid #c1131d; width: 1075px; }
+
+.live-container .match-carousel-cover { background: rgba(0, 0, 0, 0.5); position: relative; margin-bottom: 10px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left { padding-bottom: 5px; background: rgba(0, 0, 0, 0.4); }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header { margin-top: 5px; margin-bottom: 5px; padding: 5px 10px; background: rgba(199, 5, 0, 0.54); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.54)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.54), rgba(0, 0, 0, 0)); }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-title { display: inline-block; margin: 0; color: #fff; font-weight: bold; line-height: 24px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-title .sport-icon { width: 24px; height: 24px; display: inline-block; vertical-align: top; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-title .sport-icon img { max-width: 24px; display: block; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-time { color: #fff; padding-top: 4px; float: right; display: inline-block; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-time span { color: #ccc; margin-left: 20px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs { background: rgba(0, 0, 0, 0.1); }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-big-team { text-align: center; padding-bottom: 25px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-big-team .sb-team-logo { width: 100%; height: 140px; text-align: center; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-big-team .sb-team-logo img { margin: auto; display: block; max-width: 100%; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-big-team .sb-team-name { text-align: center; color: #fff; font-size: 24px; font-weight: bold; line-height: 28px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle { width: 260px; color: #FFFFFF; padding: 42px 15px 20px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle > span { display: block; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle .vs-text { font-size: 32px; margin-bottom: 35px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle .text-green { font-size: 20px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle .digital, .live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle .bonus-calculate-cover .bonus-amount .amount-title .amount-number, .bonus-calculate-cover .bonus-amount .amount-title .live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-vs .sport-vs-middle .amount-number { font-size: 48px; letter-spacing: 1px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info { color: #FFFFFF; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn { background: #313131; background: -webkit-gradient(linear, left top, left bottom, from(#313131), to(black)); background: linear-gradient(to bottom, #313131, black); padding: 8px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn .odd-bottom, .live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn .odd-top { color: #fff; font-size: 15px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn .odd-bottom > span, .live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn .odd-top > span { float: right; color: #FFFFFF; font-weight: bold; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .sport-main-info .sm-info-btn .odd-bottom { color: #ddd; margin-top: 5px; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .live-text { background: #2d2d2d; background: #313131; background: -webkit-gradient(linear, left top, left bottom, from(#313131), to(black)); background: linear-gradient(to bottom, #313131, black); border-bottom: 1px solid #2b2b2b; }
+.live-container .match-carousel-cover .match-carousel-item .main-left .sport-main-content .live-text > span { text-transform: uppercase; color: #a5c945; font-weight: bold; letter-spacing: 10px; line-height: 24px; display: inline-block; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover { width: 325px; background: rgba(0, 0, 0, 0.75); border-left: 1px solid #292929; border-right: 1px solid #6c0000; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .main-right-title { border-bottom: 1px solid #a50000; padding: 8px 10px; font-size: 16px; line-height: 26px; font-weight: bold; margin: 0 15px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .main-right-title .title-icon { display: inline-block; float: left; margin-right: 15px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body { padding: 10px 15px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list { height: 290px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item { margin-bottom: 10px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-time { float: left; font-size: 15px; margin-top: 12px; line-height: 24px; color: #ccc; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info { background: rgba(0, 0, 0, 0.5); background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0.25))); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.25)); border-left: 1px solid #ccc; margin-left: 40px; padding: 5px 10px; color: #fff; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info h4 { margin-bottom: 6px; font-size: 14px; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info h4 span { color: #999; display: inline-block; vertical-align: middle; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info .sport-main-footer { font-size: 12px; line-height: 16px; color: #fff; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info .sport-main-footer .odd-info > span { color: #ccc; }
+.live-container .match-carousel-cover .match-carousel-item .live-history-cover .live-history-body ul.live-history-list li.lh-list-item .sport-main-info .sport-main-footer .odd-amount > span { color: #ccc; }
+.live-container .slick-arrow { z-index: 10; bottom: -7px; top: auto; }
+.live-container .slick-prev { left: 36%; }
+.live-container .slick-next { right: 36%; }
+.live-container ul.slick-dots { background: #660403; background: -webkit-gradient(linear, left top, left bottom, from(#660403), to(#3a0201)); background: linear-gradient(to bottom, #660403, #3a0201); line-height: 16px; padding: 2px 10px; color: #FFFFFF; position: relative; bottom: 0; top: 0; }
+.live-container ul.slick-dots li button:before { color: white; font-size: 16px; }
+.live-container ul.slick-dots li.slick-active button:before { opacity: 0.75; color: white; font-size: 16px; }
+
+/* 01 SIDEBAR BETTING
+============================= */
+.sidebar-betting-cover { width: 265px; }
+.sidebar-betting-cover .search-bar .form-control { border: 1px solid #ccc; background: rgba(0, 0, 0, 0.52); border-radius: 0; line-height: 1; padding: 4px 10px; font-size: 14px; border-right: 0; color: #fff; }
+.sidebar-betting-cover .search-bar .form-control:focus { outline: 0; -webkit-box-shadow: none; box-shadow: none; }
+.sidebar-betting-cover .search-bar .input-group-append .btn { border-left: 0; background: none; border-color: #ccc; font-size: 14px; }
+.sidebar-betting-cover .search-bar .input-group-append .btn .fa { margin-right: 3px; }
+.sidebar-betting-cover .betting-progress { border: 1px solid #a5c845; background: rgba(0, 0, 0, 0.5); }
+.sidebar-betting-cover .betting-progress p { color: #a5c845; font-size: 14px; margin-bottom: 0; padding: 6px 10px; }
+.sidebar-betting-cover .betting-progress p > span { float: right; display: inline; }
+.sidebar-betting-cover .sidebar-list-cover .list-inline .list-inline-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.sidebar-betting-cover .sidebar-list-cover .list-inline .list-inline-item img { height: 24px; display: block; margin: 0 auto 6px; }
+.sidebar-betting-cover .sidebar-list-cover .list-inline .list-inline-item a { display: block; width: 100%; font-size: 12px; text-align: center; padding: 5px 0; background: rgba(255, 255, 255, 0); background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.2))); background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); }
+.sidebar-betting-cover .sidebar-list-cover .list-inline .list-inline-item:not(:last-child) { margin-right: 3px; }
+.sidebar-betting-cover .betting-coupon { border: 1px solid #bb0e0c; background: #000000; width: 265px; }
+.sidebar-betting-cover .betting-coupon .btn-clear-coupon { color: #ffffff; font-size: 12px; line-height: 13px; display: inline-block; padding: 8px 10px; }
+.sidebar-betting-cover .betting-coupon .btn-clear-coupon img { vertical-align: top; display: inline-block; margin-right: 5px; height: 13px; }
+.sidebar-betting-cover .betting-coupon.relative { position: relative; top: 0; }
+.sidebar-betting-cover .betting-coupon.alternative { position: relative !important; top: 0; }
+.sidebar-betting-cover .betting-coupon.fixed { top: 10px; position: fixed; }
+.sidebar-betting-cover .coupon-header { background: rgba(199, 5, 0, 0.74); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.74)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.74), rgba(0, 0, 0, 0)); padding: 5px 8px; }
+.sidebar-betting-cover .coupon-header .control-label { font-size: 12px; margin-right: 5px; line-height: 16px; margin-bottom: 0; }
+.sidebar-betting-cover .coupon-header h5 { font-size: 14px; margin-bottom: 0; display: inline-block; letter-spacing: 1px; font-weight: bold; }
+.sidebar-betting-cover .coupon-header a { float: right; height: 24px; line-height: 22px; padding: 0 15px; }
+.sidebar-betting-cover .coupon-body { padding: 7px; border-top: 1px solid rgba(255, 255, 255, 0.4); border-bottom: 1px solid rgba(255, 255, 255, 0.4); color: #FFFFFF; }
+.sidebar-betting-cover .coupon-body .coupon-match-item { font-size: 18px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item:not(:last-child) { margin-bottom: 10px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .match-header { padding: 3px 5px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .match-header .odd-title { color: #ffffff; font-size: 14px; line-height: 16px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .match-header .info-box { height: 16px; display: inline-block; background: #959595; vertical-align: top; font-size: 10px; padding: 0 6px; margin-left: 10px; line-height: 16px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .match-header .btn-close { float: right; font-size: 13px; text-transform: uppercase; width: 16px; height: 16px; line-height: 16px; padding-top: 2px; text-align: right; margin-left: auto; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .teams-title { padding: 5px 10px; line-height: 20px; font-size: 14px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .bet-info { background-color: rgba(82, 82, 82, 0.33); padding: 5px 10px; font-size: 14px; line-height: 16px; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .bet-info > span { vertical-align: top; }
+.sidebar-betting-cover .coupon-body .coupon-match-item .bet-info .amount { font-size: 14px; float: right; padding-top: 2px; }
+.sidebar-betting-cover .coupon-amount { background: rgba(255, 255, 255, 0.18); padding: 10px 7px; }
+.sidebar-betting-cover .coupon-amount .amount-input { margin-bottom: 10px; }
+.sidebar-betting-cover .coupon-amount .amount-input label { color: #ffffff; text-transform: uppercase; margin-bottom: 0; line-height: 24px; width: 130px; }
+.sidebar-betting-cover .coupon-amount .amount-input input { color: #ffffff; border: 0; text-align: right; padding: 0 8px; font-size: 24px; margin-left: auto; line-height: 1; }
+.sidebar-betting-cover .coupon-amount .amount-input input:focus { outline: none; }
+.sidebar-betting-cover .coupon-amount .amount-input .btn-red { color: #ffffff; font-size: 13px; text-transform: uppercase; border: 1px solid #f20000; background-color: rgba(165, 0, 0, 0.52); height: 24px; font-weight: bold; line-height: 24px; padding: 0 6px; }
+.sidebar-betting-cover .coupon-amount .amount-buttons a:not(:last-child) { margin-right: 5px; }
+.sidebar-betting-cover .coupon-amount .amount-buttons a > span { padding: 0; font-size: 14px; text-transform: uppercase; color: #fff; }
+.sidebar-betting-cover .coupon-footer { padding-bottom: 10px; }
+.sidebar-betting-cover .coupon-footer .total-odds { padding: 15px 10px 5px; border-top: 1px solid rgba(255, 255, 255, 0.4); border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+.sidebar-betting-cover .coupon-footer .total-odds > span { display: inline-block; line-height: 16px; color: #ffffff; }
+.sidebar-betting-cover .coupon-footer .total-odds .odds-info { font-size: 13px; text-transform: uppercase; }
+.sidebar-betting-cover .coupon-footer .total-odds .odds-count { float: right; }
+.sidebar-betting-cover .coupon-footer .total-amount { padding: 10px 10px 20px; }
+.sidebar-betting-cover .coupon-footer .total-amount > span { display: inline-block; }
+.sidebar-betting-cover .coupon-footer .total-amount .amount-info { color: #e8ff26; text-transform: uppercase; }
+.sidebar-betting-cover .coupon-footer .total-amount .calculated-amount { color: #ffffff; padding-top: 2px; }
+.sidebar-betting-cover .coupon-footer .coupon-buttons { padding: 0 10px; }
+.sidebar-betting-cover .coupon-footer .coupon-buttons .btn-submit { color: #ffffff; margin-right: 5px; font-size: 18px; letter-spacing: 1px; font-weight: bold; }
+.sidebar-betting-cover .coupon-footer .coupon-buttons .btn > span { padding: 0 5px; }
+.sidebar-betting-cover .coupon-footer .coupon-buttons .svg-icon { margin-right: 4px; height: 20px; vertical-align: top; margin-top: 1px; }
+
+/* ================ VIRTUAL MINIGAME PAGE
+======================================================= */
+.virtual-minigame-cover { background: rgba(0, 0, 0, 0.4); padding: 5px; width: 1075px; }
+
+.v-minigame-header { background: rgba(0, 0, 0, 0.84); border-top: 2px solid #c1131d; padding: 5px; }
+.v-minigame-header h4 { font-size: 22px; font-weight: bold; margin-bottom: 0; line-height: 34px; background: rgba(181, 6, 13, 0.5); background: -webkit-gradient(linear, left top, right top, from(rgba(181, 6, 13, 0.5)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(181, 6, 13, 0.5), rgba(0, 0, 0, 0)); padding-left: 10px; padding-right: 240px; }
+.v-minigame-header .alert { font-size: 13px; padding: 10px 4rem 10px 12px; border: 0; background: #3d0100; border-radius: 0; }
+.v-minigame-header .alert .close { padding: 5px 10px; }
+
+.v-minigame-table-cover { border: 1px solid #6b1910; background: rgba(0, 0, 0, 0.6); padding: 10px 20px; }
+.v-minigame-table-cover .history-table tr td > span { display: block; }
+.v-minigame-table-cover .history-table tr th { color: rgba(255, 255, 255, 0.5); border-top: 0; border-right: 0; }
+.v-minigame-table-cover .history-table tr td, .v-minigame-table-cover .history-table tr th { font-size: 14px; line-height: 16px; }
+.v-minigame-table-cover .history-table tr td:first-child, .v-minigame-table-cover .history-table tr td:nth-child(2) { text-align: left; padding-left: 30px; }
+
+.minigame-video-cover { width: 510px; }
+.minigame-video-cover .tab-content { background: #22232b; }
+.minigame-video-cover .video-content { background: #282626 url("../img/minigame-camera.png") no-repeat center center; width: 100%; min-height: 348px; margin-bottom: 5px; text-align: center; }
+.minigame-video-cover .video-content iframe { display: block; width: 100%; margin: 0 auto; }
+.minigame-video-cover .video-channels { background: #000000; padding: 1px; }
+.minigame-video-cover .video-channels .nav-item { text-align: center; font-size: 14px; padding: 9px 10px; background: rgba(0, 0, 0, 0.6); background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(#333333)); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #333333); border-bottom: 1px solid rgba(255, 255, 255, 0.25); border-radius: 0; }
+.minigame-video-cover .video-channels .nav-item.active { border-color: #fff; background: rgba(0, 0, 0, 0.6); background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(218, 46, 46, 0.6))); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(218, 46, 46, 0.6)); }
+
+.minigame-bets-cover { height: 388px; margin-left: 10px; overflow: hidden; }
+.minigame-bets-cover .m-bets-header { border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin-bottom: 5px; padding: 2px 0 5px; position: relative; }
+.minigame-bets-cover .m-bets-header .m-bets-title { font-size: 15px; font-weight: bold; line-height: 20px; }
+.minigame-bets-cover .m-bets-header .list-inline .list-inline-item { font-size: 14px; font-weight: bold; position: relative; line-height: 20px; padding: 0 5px; }
+.minigame-bets-cover .m-bets-header .list-inline .list-inline-item::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 1px; background: rgba(255, 255, 255, 0); }
+.minigame-bets-cover .m-bets-header .list-inline .list-inline-item::before { content: ''; position: absolute; height: 100%; width: 1px; background: rgba(255, 255, 255, 0.3); left: -6px; }
+.minigame-bets-cover .m-bets-header .list-inline .list-inline-item.active::after { background: #FFFFFF; }
+.minigame-bets-cover .m-bets-header .list-inline .list-inline-item:first-child::before { background: rgba(255, 255, 255, 0); }
+.minigame-bets-cover .mCustomScrollbar { height: 354px; }
+.minigame-bets-cover .mCSB_inside > .mCSB_container { margin-right: 16px; }
+
+.sport-tabs-minigame { padding: 0; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item:not(:last-child) { margin-bottom: 5px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sport-tabs-title { background-color: #6f0605; padding: 5px 10px; color: #FFFFFF; margin-bottom: 5px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title > span { line-height: 24px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sport-tabs-title .match-title .flag-icon { min-width: 28px; overflow: hidden; vertical-align: top; margin-right: 10px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item:not(:last-child) { margin-bottom: 5px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info { background: #3e3e3e; width: 80px; text-align: center; padding: 2px 0px 0px 0px; line-height: 14px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info .match-date { color: #9e9e9e; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-date-info .match-time { color: #FFFFFF; font-weight: bold; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info { width: 64px; text-align: center; min-width: 64px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-history-info .mh-title { line-height: 32px; font-size: 12px; padding: 0 5px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd { width: 144px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd a { color: #FFFFFF; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 12px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 32px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .team-name { padding: 0 5px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount { background: #3e3e3e; min-width: 40px; line-height: 30px; height: auto; font-size: 13px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd.odd-center { width: 84px; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text > span { display: inline-block; line-height: 38px; text-align: center; min-width: 56px; border: 1px solid transparent; background: #000000; font-size: 13px; background: #2d2d2d; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-blue { border-color: #237F96; color: #237F96; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-red { border-color: #BA1D24; color: #BA1D24; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-green { border-color: #8AA53E; color: #8AA53E; }
+.sport-tabs-minigame > ul.sport-match-list > li.sm-list-item .sm-table-item .match-info-text .text-yellow { border-color: #FFD000; color: #FFD000; }
+
+/* ================ CASINO PAGE
+======================================================= */
+.casino .header-top { background: #000000 url("../img/casino/casino-header.png") no-repeat center top; }
+.casino .header-top .sport-casino .balance-item span { background: #ed8e1d; background: -webkit-gradient(linear, left top, left bottom, from(#ed8e1d), to(#f7b21d)); background: linear-gradient(to bottom, #ed8e1d, #f7b21d); color: #000000; }
+.casino .main-content { background: #000000 url("../img/casino/casinobg.jpg") no-repeat top; min-height: 1566px; background-size: 2240px; }
+.casino .main-header { border-bottom: 5px solid #c8c07a; }
+.casino .navbar-cover .navbar-bottom { -webkit-box-shadow: inset 0 3px 3px #5b3c08; box-shadow: inset 0 3px 3px #5b3c08; padding-top: 5px; background: none; height: 33px; }
+.casino .navbar-cover .submenu-bg { background: url("../img/casino/submenu-bg.png") no-repeat center right; left: -416px; width: 725px; }
+
+.sidebar-casino { width: 265px; border: 1px solid rgba(242, 174, 49, 0.6); background: rgba(0, 0, 0, 0.64); padding: 10px 5px; }
+.sidebar-casino .casino-section-title { line-height: 36px; width: 100%; padding-bottom: 5px; border-bottom: 2px solid #ffa800; margin-bottom: 14px; }
+.sidebar-casino .casino-section-title .casino-icon { margin-right: 10px; }
+.sidebar-casino .casino-section-title .casino-icon img { vertical-align: top; }
+.sidebar-casino .casino-section-title .casino-title { color: #ffffff; font-size: 16px; font-weight: bold; }
+.sidebar-casino .casino-section-title .btn-refresh { width: 40px; height: 36px; border: 1px solid #ffa800; padding: 3px; background: none; }
+.sidebar-casino .casino-section-title .btn-refresh span { display: block; background: rgba(187, 123, 10, 0.33); background: -webkit-gradient(linear, left top, right top, from(rgba(187, 123, 10, 0.33)), to(rgba(187, 123, 10, 0))); background: linear-gradient(to right, rgba(187, 123, 10, 0.33), rgba(187, 123, 10, 0)); width: 100%; height: 100%; }
+.sidebar-casino .casino-section-title .btn-refresh span img { padding-top: 3px; }
+.sidebar-casino .casino-balance-cover { margin-bottom: 15px; }
+.sidebar-casino .casino-balance-cover .balance-header { background: rgba(214, 143, 18, 0.8); background: -webkit-gradient(linear, left top, right top, from(rgba(214, 143, 18, 0.8)), to(rgba(187, 123, 10, 0.55))); background: linear-gradient(to right, rgba(214, 143, 18, 0.8), rgba(187, 123, 10, 0.55)); padding: 4px 6px; margin-bottom: 10px; }
+.sidebar-casino .casino-balance-cover .balance-header span { display: inline-block; vertical-align: top; line-height: 24px; }
+.sidebar-casino .casino-balance-cover .balance-header .main-title { font-size: 14px; margin-bottom: 0; }
+.sidebar-casino .casino-balance-cover .balance-header .main-balace { float: right; color: #ffffff; font-size: 17px; padding-top: 2px; }
+.sidebar-casino .casino-balance-cover .balance-history li { border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding: 6px 5px; }
+.sidebar-casino .casino-balance-cover .balance-history li p { margin-bottom: 0; font-size: 14px; }
+.sidebar-casino .casino-balance-cover .balance-history li p span { display: inline-block; float: right; padding-top: 2px; }
+.sidebar-casino .casino-balance-cover .btn-block { letter-spacing: 1px; border-color: rgba(255, 255, 255, 0.5); }
+.sidebar-casino .transfer-buttons .transfer-select-group { margin-bottom: 20px; }
+.sidebar-casino .transfer-buttons .transfer-select-group .select-left, .sidebar-casino .transfer-buttons .transfer-select-group .select-right { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.sidebar-casino .transfer-buttons .transfer-select-group .select-icon { width: 12px; text-align: center; padding-top: 28px; padding-left: 2px; }
+.sidebar-casino .transfer-buttons .transfer-select-group .select-title { margin-bottom: 5px; font-size: 14px; text-transform: uppercase; font-weight: bold; }
+.sidebar-casino .transfer-buttons .custom-select { background: rgba(187, 123, 10, 0.33) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center; background-size: 8px 10px; border-color: rgba(187, 123, 10, 0.33); border-radius: 0; color: #ffffff; border-color: #bb7b0a; height: auto; padding: 6px 8px; font-size: 12px; }
+.sidebar-casino .transfer-buttons .transfer-footer label { text-transform: uppercase; margin-bottom: 5px; display: block; }
+.sidebar-casino .transfer-buttons .transfer-footer .change-amount { border: 1px solid rgba(255, 255, 255, 0.5); background: none; text-align: center; color: #ffffff; text-transform: uppercase; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; padding-top: 6px; height: 40px; }
+.sidebar-casino .transfer-buttons .transfer-footer .btn { height: auto; }
+.sidebar-casino .transfer-buttons .transfer-footer .btn > span { padding: 4px 10px; font-size: 14px; }
+
+.casino-slider { width: 800px; margin-bottom: 12px; }
+
+.install-flash-player { border: 1px solid rgba(242, 174, 49, 0.6); background: rgba(0, 0, 0, 0.64); padding: 8px 20px; }
+.install-flash-player .i-flash-text .text-box { font-size: 16px; border-bottom: 2px solid #f2ae31; border-right: 1px solid rgba(242, 174, 49, 0.3); border-left: 1px solid rgba(242, 174, 49, 0.3); padding: 5px 15px; display: inline-block; position: relative; top: -6px; }
+.install-flash-player .i-flash-text p { font-size: 14px; line-height: 16px; }
+.install-flash-player .btn { height: auto; font-size: 18px; }
+.install-flash-player .btn > span { padding: 6px 60px; font-weight: bold; }
+
+.casino-events .event-box { display: block; }
+.casino-events .event-box h3 { color: #fff; border-top: 2px solid #ffa800; }
+.casino-events .event-box .img-box { padding-top: 390px; background-size: cover; background-position: center top; }
+.casino-events .event-box .img-box.casino-01 { background-image: url("../img/casino/img-10.jpg"); }
+.casino-events .event-box .img-box.casino-02 { background-image: url("../img/casino/img-11.jpg"); }
+.casino-events .event-box .img-box.casino-03 { background-image: url("../img/casino/img-12.jpg"); }
+.casino-events .event-box .img-box.casino-04 { background-image: url("../img/casino/img-13.jpg"); }
+.casino-events .event-box .img-box.casino-05 { background-image: url("../img/casino/img-14.jpg"); }
+.casino-events .event-box .img-box.casino-06 { background-image: url("../img/casino/img-15.jpg"); }
+.casino-events .event-box .event-btn { background: #000000; padding: 10px; }
+.casino-events .event-box .event-btn .btn { height: 40px; line-height: 32px; font-weight: bold; letter-spacing: 1px; }
+
+.casino-footer { padding-top: 80px; padding-bottom: 54px; }
+.casino-footer .footer-content p { font-size: 13px; opacity: 0.6; font-weight: bold; }
+
+/* ================ BETTING RULE PAGE
+======================================================= */
+.betting-rule-cover { border-color: #e60500; padding: 25px 20px; }
+.betting-rule-cover .nav { width: 290px; background: rgba(45, 1, 0, 0.84); border-top: 2px solid #c1131d; height: 100%; }
+.betting-rule-cover .nav .nav-header { font-size: 18px; padding: 6px 10px; font-weight: bold; background: rgba(199, 5, 0, 0.54); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.54)), to(rgba(0, 0, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.54), rgba(0, 0, 0, 0)); }
+.betting-rule-cover .nav .nav-link { border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding: 10px 5px; margin: 0 10px; }
+.betting-rule-cover .nav .nav-link.active { background: rgba(199, 5, 0, 0.9); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.9)), to(rgba(199, 5, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.9), rgba(199, 5, 0, 0)); }
+.betting-rule-cover .nav-notice .nav-link { position: relative; padding-bottom: 21px; }
+.betting-rule-cover .nav-notice .nav-link .date { font-size: 12px; color: #a5a5a5; position: absolute; bottom: 5px; right: 0; }
+.betting-rule-cover .tab-content { margin-left: 20px; }
+.betting-rule-cover .tab-content header { display: block; background: rgba(146, 3, 3, 0.4); padding: 5px; margin-bottom: 30px; }
+.betting-rule-cover .tab-content header h4 { font-size: 22px; font-weight: bold; display: inline-block; background: rgba(199, 5, 0, 0.9); background: -webkit-gradient(linear, left top, right top, from(rgba(199, 5, 0, 0.9)), to(rgba(199, 5, 0, 0))); background: linear-gradient(to right, rgba(199, 5, 0, 0.9), rgba(199, 5, 0, 0)); line-height: 40px; margin-bottom: 0; min-width: 200px; padding-left: 15px; }
+.betting-rule-cover .tab-content .betting-rule-content { line-height: 1.2; padding: 0 5px; }
+.betting-rule-cover .tab-content .betting-rule-content p { margin-bottom: 20px; line-height: 1.2; font-size: 17px; }
+.betting-rule-cover .tab-content .betting-rule-content .text-red { color: #d20400 !important; }
+
+/* ================ PROMOTION PAGE
+======================================================= */
+.promotion .main-content { background: #000000 url("../img/promotion/promotionbg.jpg") no-repeat top; }
+
+.promotion-box { background: #640c0a; background: -webkit-gradient(linear, left top, right top, from(#640c0a), to(rgba(0, 0, 0, 0.9))); background: linear-gradient(to right, #640c0a, rgba(0, 0, 0, 0.9)); border-top: 2px solid #c70500; margin-bottom: 10px; }
+.promotion-box .promo-collapse { display: block; }
+.promotion-box .promo-collapse > span { vertical-align: top; }
+.promotion-box .promo-collapse > .btn { float: right; margin-top: 6px; margin-right: 10px; }
+.promotion-box .promo-collapse img { width: 100%; }
+.promotion-box .promo-collapse .promotion-title { font-size: 24px; display: inline-block; line-height: 32px; margin: 5px 10px; padding-top: 4px; }
+.promotion-box .promo-collapse.promo-button { padding: 5px 10px; }
+.promotion-box .promo-collapse.promo-button .promotion-title { margin: 0; }
+.promotion-box .promo-body { padding: 25px; line-height: 1.3; font-size: 15px; background: #070000; }
+.promotion-box .promo-body .promo-body-inner { background: #000000; background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(178, 5, 1, 0.5))); background: linear-gradient(to bottom, #000000, rgba(178, 5, 1, 0.5)); }
+.promotion-box .promo-body .promo-body-inner img { width: 100%; margin-bottom: 15px; }
+.promotion-box .promo-body .promo-body-inner .p-body-steps { background: #470201; padding: 5px; }
+.promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item { background: #b20501; background: -webkit-gradient(linear, left top, right top, from(#b20501), to(rgba(178, 5, 1, 0))); background: linear-gradient(to right, #b20501, rgba(178, 5, 1, 0)); padding: 5px 20px; }
+.promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item h3 { font-size: 32px; font-weight: bold; margin-bottom: 0; }
+.promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item p { padding-bottom: 15px; }
+.promotion-box .promo-body .promo-body-inner .p-body-copy { padding: 20px; text-align: center; }
+.promotion-box .promo-body .promo-body-inner .p-body-copy p { color: #FFFFFF; line-height: 18px; margin-bottom: 20px; }
+
+/* ================ PROMOTION PAGE
+======================================================= */
+.inplay .main-content { background: #000000 url("../img/inplaybg.jpg") no-repeat top; min-height: 1126px; background-size: 1920px; }
+.inplay .main-content .coming-soon-header { margin-right: 100px; margin-top: 330px; }
+.inplay .main-content .coming-soon-header h1 { color: #fff; font-size: 80px; letter-spacing: .1em; font-weight: 700; text-shadow: 1px 1px 4px #222; text-transform: uppercase; margin-bottom: 30px; }
+.inplay .main-content .coming-soon-header h3 { color: #fff; font-size: 29px; font-weight: 700; letter-spacing: .25em; }
+
+.fullscreen-bg { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -100; }
+
+.fullscreen-bg-video { position: absolute; top: 0; margin: 0 auto; left: 0; right: 0; width: 1920px; }
+
+.login-wrapper { background: url("../img/login-overlay.png") no-repeat center top; }
+.login-wrapper .custom-select { border-radius: 0; border: 1px solid #8f8f8f; font-size: 16px; color: #8f8f8f; background-color: rgba(8, 0, 0, 0.5); height: auto; padding-top: 10px; padding-bottom: 10px; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); }
+.login-wrapper .login-inner { width: 340px; margin-top: 60px; }
+.login-wrapper .login-inner .form-group .form-control { display: block; padding: 10px .75rem; font-size: 1rem; color: #fff; border: 1px solid #8f8f8f; border-radius: 0; background-color: rgba(8, 0, 0, 0.5); }
+.login-wrapper .login-inner .register-buttons .btn-inner-white { height: auto; line-height: 38px; font-size: 20px; }
+.login-wrapper .login-inner .btn-inner-green, .login-wrapper .login-inner .btn-inner-white.active { height: auto; line-height: 32px; font-size: 24px; }
+.login-wrapper .login-inner .btn-inner-green > span, .login-wrapper .login-inner .btn-inner-white.active > span { padding-top: 6px; }
+.login-wrapper .login-inner .btn-inner-green .btn-icon, .login-wrapper .login-inner .btn-inner-white.active .btn-icon { margin-top: 7px; margin-right: 8px; }
+.login-wrapper .login-inner .register-code-group { width: 100%; border: 1px solid #8f8f8f; padding: 5px; }
+.login-wrapper .login-inner .register-code-group .form-control { border: 0; border-radius: 0; background: #211919; color: #fff; }
+.login-wrapper .login-inner .register-code-group .btn { font-size: 22px; height: auto; line-height: 36px; border: 0; padding: 0; }
+
+/* ================ HELPER CLASSES
+======================================================= */
+.custom-input { display: block; position: relative; padding-left: 34px; margin-bottom: 10px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 16px; color: #efefef; line-height: 24px; }
+.custom-input input { position: absolute; opacity: 0; cursor: pointer; }
+.custom-input input:checked ~ .checkmark:after { display: block; }
+.custom-input:hover input ~ .checkmark { background: rgba(255, 255, 255, 0.3); }
+.custom-input .checkmark:after { left: 7px; top: 2px; width: 8px; height: 14px; border: solid #a4ce25; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+.checkmark { position: absolute; top: 0; left: 0; height: 24px; width: 24px; text-align: center; border: 1px solid #fff; background: rgba(255, 255, 255, 0.24); }
+.checkmark:after { content: ""; position: absolute; display: none; }
+
+.color-red { color: #ff0000 !important; }
+
+.color-yellow { color: #f6ff00 !important; }
+
+.kartika, .pagination .list-inline-item a, .sport-tabs-arrow > ul.sport-match-list > li.sm-list-item .sm-table-item .match-odd .odd-amount, .header-top .sport-casino .balance-item span, .navbar-cover .navbar-top .user-nav-list li.user-name, .navbar-cover .navbar-top .user-nav-list li.message .btn-message .message-count, .header-bar .hero-notifications .n-box-cover ul.n-list-cover li span, .header-bar .hero-notifications .hn-buttons .talk-btn > span, .support-page-body .support-header .talk-btn > span, .support-page-body .support-chat-cover .s-chat-body .s-chat-item .sc-message-box .sc-message-time, .history-tab-filter .select-date-filter .list-inline-item a, .sport-tabs-footer .st-footer-item .st-footer-copy .text-green, .history-table tbody .amount, .history-table tbody .award, .history-table tbody .odd, .match-result-table tbody tr td.table-score > div, .match-result-table tbody tr td.table-date, .match-result-table tbody tr td.table-odd .odd-amount, .live-container .match-carousel-cover .match-carousel-item .main-left .sport-header .sport-time, .sidebar-betting-cover .coupon-body .coupon-match-item .match-header .btn-close, .sidebar-betting-cover .coupon-body .coupon-match-item .bet-info .amount, .sidebar-casino .casino-balance-cover .balance-header .main-balace, .sidebar-casino .casino-balance-cover .balance-history li p span, .sidebar-casino .transfer-buttons .transfer-footer .change-amount, .promotion-box .promo-collapse .promotion-title, .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item h3, .promotion-box .promo-body .promo-body-inner .p-body-steps .promo-step-item p, .promotion-box .promo-body .promo-body-inner .p-body-copy p, .inplay .main-content .coming-soon-header h1, .login-wrapper .login-inner .btn-inner-green, .login-wrapper .login-inner .btn-inner-white.active { font-family: 'Kartika'; font-weight: bold; font-style: normal; }
+
+.digital, .bonus-calculate-cover .bonus-amount .amount-title .amount-number { font-family: 'digital7'; font-weight: normal; font-style: normal; }
+
+.alert-text { color: #f3721c; margin-bottom: 10px; }
+
+.text-green { color: #d0ff51 !important; }
+
+.text-red { color: #fb403d !important; }
+
+.text-yellow { color: #e9e600; }
+
+.text-turquoise { color: #25bba4; }
+
+.text-danger { color: #d30000 !important; }
+
+.mb-0 { margin-bottom: 0; }
+
+.bg-green { background: rgba(109, 133, 38, 0.4); border: 1px solid #6f9e33; }
+
+.bg-blue { background: rgba(61, 169, 201, 0.32); border: 1px solid #3da9c9; }
