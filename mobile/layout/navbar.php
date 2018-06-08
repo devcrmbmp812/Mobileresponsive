@@ -10,7 +10,7 @@
 
     <div class="nav-top-center">
       <a href="homepage.php" class="navbar-logo">
-        <img src="../assets/img/mobile-logo.png" alt="mybet Logo">
+        <img src="../assets/img/mybet-logo.png" alt="mybet Logo">
       </a>
     </div>
 

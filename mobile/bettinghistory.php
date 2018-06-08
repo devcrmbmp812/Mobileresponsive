@@ -24,13 +24,18 @@ include 'layout/navbar.php'; ?>
 	  </span>
 	  
     </div>
-    <div class="nav-balance ml0">
-     <span class="anchorwrap posrel" >
-      <a class="btn1 btn-mgrey noborder" href="#">
-       진행중인 배팅 확인하기 
-      </a>
-	   <span class="dropdownimg"><img src="assets/img/ddoenarrow.png"></span>
-	  </span>
+    <div class="nav-balance ml0 w46">
+  
+	<div id="dd" class="wrapper-dropdown-3 anchorwrap" tabindex="1">
+						<span class=" btn1 btn-mgrey noborder"><a class="" href="#">진행중인 배팅 확인하기 </a></span>
+						<ul class="dropdown">
+							<li><a href="#">Option 1</a></li>
+							<li><a href="#">Option 2</a></li>
+							<li><a href="#">Option 3</a></li>
+						</ul>
+    </div>
+	
+	
   
     </div>
   </div>
